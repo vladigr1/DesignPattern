@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage{pgffor}
+\usepackage{listings}
+
+\usepackage{courier} %% Sets font for listing as Courier.
+\usepackage{listings, xcolor}
+\pagenumbering{gobble}
+\lstset{
+	tabsize = 4, %% set tab space width
+	showstringspaces = false, %% prevent space marking in strings, string is defined as the text that is generally printed directly to the console
+	numbers = left, %% display line numbers on the left
+	commentstyle = \color{green}, %% set comment color
+	keywordstyle = \color{blue}, %% set keyword color
+	stringstyle = \color{red}, %% set string color
+	rulecolor = \color{black}, %% set frame color to avoid being affected by text color
+	basicstyle = \tiny \ttfamily , %% set listing font and size
+	breaklines = true, %% enable line breaking
+	numberstyle = \tiny,
+}
+\begin{document}
+
+\foreach \java in  {../src/SentenceBuilder.java, ../src/PastSentenceBuilder.java, ../src/PresentSentenceBuilder.java, ../src/SimpleSentaceDirector.java, ../src/WhenSentaceDirector.java, ../src/Main.java } {
+   \begin{figure}[htpb]
+        \lstinputlisting[language=java]{\java}
+        \caption{Source code for \textsf{\java}}
+     \label{fig:\java}
+   \end{figure}
+}
+\end{document}
