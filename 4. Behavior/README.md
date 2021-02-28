@@ -17,5 +17,6 @@ interconnected.
 * Interpreter
 * Memento
 
+## Less intresting
 * NullObject
 * Servant
