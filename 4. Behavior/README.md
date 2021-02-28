@@ -9,8 +9,13 @@ focus away from flow of control to let you concentrate just on the way objects a
 interconnected.
 
 ## Patterns
+* Mediator
+* Observer
+* Visitor
+* DAO
 * Command
 * Interpreter
-* Mediator
-* DAO
-* Visitor
+* Memento
+
+* NullObject
+* Servant
