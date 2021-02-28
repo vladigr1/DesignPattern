@@ -2,6 +2,18 @@
 Behavior Pattern which, Encapsulate a request as an object, letting you parameterize clients with different requests.
 ![Command](Command.png)
 
+* Command
+  * declares an interface for executing an operation.
+* ConcreteCommand (PasteCommand, OpenCommand)
+  * defines a binding between a Receiver object and an action.
+  * implements Execute by invoking the corresponding operation(s) on Receiver.
+* Client (Application)
+  * creates a ConcreteCommand object and sets its receiver.
+* Invoker (MenuItem)
+  * asks the command to carry out the request.
+* Receiver (Document, Application)
+  * knows how to perform the operations associated with carrying out a
+request. Any class may serve as a Receiver.
 # Applicability
 1. You can express such parameterization in a procedural language with a callback.\
    function, that is, a function that's registered somewhere to be called at a later point.

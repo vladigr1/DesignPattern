@@ -1,6 +1,5 @@
 # Adapter
-Transfer the interface.\
-Convert the interface of a class into another interface clients expect.\
+adapter pattern that allows the interface of an existing class to be used as another interface.\
 Adapter lets classes work together that couldn't otherwise because of incompatible interfaces.
 
 <img src="adpter-class-diagram.png" alt="drawing" width="500"/>
@@ -9,6 +8,8 @@ Adapter lets classes work together that couldn't otherwise because of incompatib
 * Client (DrawingEditor): collaborates with objects conforming to the Target interface.
 * Adaptee (TextView): defines an existing interface that needs adapting.
 * Adapter (TextShape): adapts the interface of Adaptee to the Target interface.
+
+**note**: in case you implement with class variable you must get the requested class (usually truth the constructor)
 ## Applicability
 Use the Adapter pattern when
 * you want to use an existing class, and its interface does not match the one you

@@ -1,5 +1,3 @@
-
-
 package Prototype;
 public abstract class Animal implements Cloneable{
 	protected String gender;//FEMALE / MALE
@@ -51,6 +49,4 @@ public abstract class Animal implements Cloneable{
 		cloned.totalkg= this.totalKG();
 		return cloned;
 	}
-
-
 }
